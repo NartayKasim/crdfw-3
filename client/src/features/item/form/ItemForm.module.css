@@ -1,0 +1,88 @@
+.itemForm {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   flex-grow: 1;
+}
+
+.header {
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 27rem;
+   gap: 1rem;
+   width: 100%;
+   padding-bottom: 4rem;
+}
+
+.label {
+   width: 100%;
+   font-size: 1.4rem;
+   text-transform: capitalize;
+   font-weight: 500;
+   display: grid;
+   gap: 2rem;
+   align-items: center;
+   grid-template-columns: 10rem 1fr;
+   color: var(--slate-gray);
+}
+
+.value {
+   padding: 0.5rem 1rem;
+   font-weight: 600;
+   color: var(--charleston-green);
+}
+
+.input {
+   width: 100%;
+   background: var(--input);
+   border: none;
+   padding: 0.5rem 1rem;
+   border-radius: 0.4rem;
+}
+
+.input:disabled {
+   background: none;
+   border: none;
+   height: auto;
+}
+
+.hintWrapper {
+   position: relative;
+}
+
+.buttons {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   gap: var(--default-padding);
+}
+
+.hintWrapper {
+   margin: 2rem 0;
+}
+
+@media only screen and (max-width: 440px) {
+   .form {
+      min-height: 29rem;
+   }
+   .label {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+   }
+
+   .value {
+      padding: 0;
+   }
+}

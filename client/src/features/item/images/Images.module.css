@@ -1,0 +1,86 @@
+.images {
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: var(--default-padding);
+}
+
+.header {
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 3rem;
+   width: 100%;
+   overflow: auto;
+}
+
+.column {
+   display: flex;
+   flex-direction: column;
+}
+
+.imageWrapper {
+   position: relative;
+   z-index: 1;
+}
+
+.image {
+   width: 15rem;
+}
+
+.deleteImage {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   color: red;
+   cursor: pointer;
+   z-index: 2;
+}
+
+.deleteImage:hover {
+   color: blue;
+}
+
+.deleteIcon {
+   width: 2rem;
+   height: 2rem;
+}
+
+.imageLink {
+   position: relative;
+   display: grid;
+   grid-template-columns: 3rem 1fr;
+   gap: 1rem;
+   font-size: 1.3rem;
+   color: var(--slate-gray);
+}
+
+.imageIdx {
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.row {
+   position: relative;
+   display: flex;
+   gap: 2rem;
+}
+
+.imageInput {
+   background: var(--cultured-2);
+   font-family: var(--font-family--default);
+   padding: 0 0.5rem;
+   border: none;
+   border-radius: 0.25rem;
+   flex-grow: 1;
+}

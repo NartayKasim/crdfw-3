@@ -1,0 +1,38 @@
+.description {
+   position: relative;
+   width: 100%;
+   font-family: var(--font-family--default);
+   font-size: 1.4rem;
+   color: var(--gunmetal);
+}
+
+.description > p {
+   line-height: 2.5rem;
+}
+
+.header {
+   font-size: 2rem;
+   font-weight: 700;
+   display: flex;
+   justify-content: space-between;
+}
+
+.buttonsTop,
+.buttonsBottom {
+   display: flex;
+   gap: var(--default-padding);
+   justify-content: flex-end;
+}
+
+.buttonsTop {
+   padding-bottom: 3rem;
+   gap: 2rem;
+}
+
+.buttonsBottom {
+   padding-top: 3rem;
+}
+
+.hintWrapper {
+   padding-bottom: var(--default-padding);
+}
